@@ -74,7 +74,7 @@ export const Login = () => {
       reset();
       navigate("/");
     }
-  }, [data]);
+  }, [data, navigate, reset]);
 
   useEffect(() => {
     if (error) {

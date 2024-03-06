@@ -39,7 +39,7 @@ export const Forgot = () => {
     if (data || error) {
       navigate("/auth/reset-password");
     }
-  }, [data, error]);
+  }, [data, error, navigate]);
 
   return (
     <FormLayout title="Forgot Password?">

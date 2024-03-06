@@ -63,7 +63,7 @@ export const Reset = () => {
       reset();
       navigate("/auth/login");
     }
-  }, [data]);
+  }, [data, navigate, reset]);
 
   useEffect(() => {
     if (error) {
@@ -78,7 +78,7 @@ export const Reset = () => {
         navigate("/auth/login");
       });
     }
-  }, [error]);
+  }, [error, navigate]);
 
   return (
     <FormLayout title="Create new Password?">
